@@ -420,6 +420,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     libwpa_client \
     TetheringConfigOverlay \
+    wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf \
     WifiOverlay
