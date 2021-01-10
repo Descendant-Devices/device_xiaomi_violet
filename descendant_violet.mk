@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2019-2020 The LineageOS Project
-# Copyright (C) 2018-2020 The SuperiorOS Project
+# Copyright (C) 2018-2020 The DescendantOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,8 +8,9 @@
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common DescendantOS stuff.
+$(call inherit-product, vendor/descendant/config/common_full_phone.mk)
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -18,7 +19,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_violet
+PRODUCT_NAME := descendant_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
